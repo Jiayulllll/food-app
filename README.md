@@ -15,7 +15,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Built using:
 
 - Front-end library: React
-- Back-end library: Node.js
 - Database: MongoDB
 - Development environment: Vite
 

@@ -1,5 +1,9 @@
 # still working on the backend
 
+## finished connected to the MongDB and add, list, order function
+
+## now working on the admin panel for the website backend
+
 # React + Vite
 
 create the app using `npm create vite@latest`

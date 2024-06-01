@@ -15,7 +15,9 @@ const Add = () => {
   const [image, setImage] = useState(false);
 
   const onSubmitHandler = async (event) => {
+    // prevent after click add button, the page will reload
     event.preventDefault();
+
     const formData = new FormData();
     formData.append("name", data.name);
     formData.append("description", data.description);

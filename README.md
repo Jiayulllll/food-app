@@ -2,7 +2,9 @@
 
 ## finished connected to the MongDB and add, list, order function
 
-## now working on the admin panel for the website backend
+## finished on the admin panel for the website backend
+
+## now working on the login & registration feature
 
 # React + Vite
 

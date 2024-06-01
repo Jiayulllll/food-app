@@ -32,7 +32,8 @@
   max-width: 120px;
   border: none;
   padding: 10px;
-  background-color: black;
+  background-color: #c99ce9;
   color: white;
   cursor: pointer;
+  border-radius: 20px;
 }

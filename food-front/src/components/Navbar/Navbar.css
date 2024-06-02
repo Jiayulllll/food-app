@@ -61,6 +61,51 @@
 .navbar-right button:hover {
   background: #c187d1;
 }
+.navbar-profile {
+  position: relative;
+}
+.navbar-profile img {
+  position: relative;
+  height: 25px; /* Adjust the size as needed */
+  width: auto;
+}
+.navbar-profile-dropdown {
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+}
+.navbar-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.navbar-profile-dropdown img {
+  width: 20px;
+}
+.navbar-profile-dropdown p {
+  color: white;
+}
+.navbar-profile-dropdown li:hover {
+  color: #c187d1;
+}
+.navbar-profile:hover .navbar-profile-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #000000;
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: 1px solid #c187d1;
+  outline: 2px solid white;
+  list-style: none;
+}
+.navbar-profile hr {
+  background-color: gray;
+  height: 1px;
+  border: none;
+}
 
 @media (max-width: 1050px) {
   .navbar .logo {

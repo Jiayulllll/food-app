@@ -9,14 +9,14 @@ const loginUser = async (req, res) => {
   try {
     const user = await userModel.findOne({ email });
     if (!user) {
-      return res.json({ success: false, mesage: "User does not exist" });
+      return res.json({ success: false, message: "User does not exist" });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       return res.json({
         success: false,
-        mesage: "The password is not correct",
+        message: "The password is not correct",
       });
     }
 

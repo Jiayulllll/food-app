@@ -1,3 +1,5 @@
+# watch the preview using: https://food-5gotf7yxf-tristals-projects.vercel.app/
+
 # still working on the backend. Not deploy the backend, during the development the front website can not fetch data from server.
 
 ## finished connected to the MongDB and add, list, order function

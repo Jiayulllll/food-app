@@ -1,12 +1,14 @@
-# still working on the backend
+# still working on the backend. Not deploy the backend, during the development the front website can not fetch data from server.
 
 ## finished connected to the MongDB and add, list, order function
 
 ## finished on the admin panel for the website backend
 
-## now working on the login & registration feature
+## finished on the login & registration feature
 
-# React + Vite
+## now working on cart feature
+
+# React + Nodejs + Vite
 
 create the app using `npm create vite@latest`
 framework: React

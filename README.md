@@ -6,7 +6,11 @@
 
 ## finished on the login & registration feature
 
-## now working on cart feature
+## finshed on cart feature, order feature, stripe payments
+
+## Now working on vertify page, user order page, order page in admin panel
+
+## map feature, search feature will done this week.
 
 # React + Nodejs + Vite
 

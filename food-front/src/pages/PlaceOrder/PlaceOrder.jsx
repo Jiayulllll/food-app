@@ -7,6 +7,9 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const PlaceOrder = () => {
+  const { getTotalCartAmount, token, food_list, cartItems, url, setCartItems } =
+    useContext(StoreContext);
+
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -18,9 +21,6 @@ const PlaceOrder = () => {
     country: "",
     phone: "",
   });
-
-  const { getTotalCartAmount, token, food_list, cartItems, url, setCartItems } =
-    useContext(StoreContext);
 
   const navigate = useNavigate();
 

@@ -2,20 +2,22 @@
 
 ## finished connected to the MongDB and add, list, order function
 
-## finished on the admin panel for the website backend
+## finished the admin panel for the website backend
 
-## finished on the login & registration feature
+## finished the login & registration feature
 
-## finshed on cart feature, order feature, stripe payments
+## finshed cart feature, order feature, stripe payments
 
-## Now working on vertify page, user order page, order page in admin panel
+## finished vertify page, user order page, order page in admin panel
 
-## map feature, search feature will done this week.
+## Working on map feature, search feature will done this week.
 
 # React + Nodejs + Vite
 
 create the app using `npm create vite@latest`
+
 framework: React
+
 variant: Javascript
 
 # Food order Portfolio Website in React
@@ -27,6 +29,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Built using:
 
 - Front-end library: React
+- Back-end library: Nodejs
 - Database: MongoDB
 - Development environment: Vite
 

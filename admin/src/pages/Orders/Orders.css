@@ -21,12 +21,16 @@
   margin-bottom: 10px;
 }
 .order-item select {
-  background-color: #ffe8e4;
+  background-color: #e3bbe3;
   border: 1px solid #c99ce9;
   width: max(10vw, 120px);
   padding: 10px;
   outline: none;
 }
+.order-list img {
+  width: 4vw;
+}
+
 @media (max-width: 1000px) {
   .order-item {
     font-size: 12px;

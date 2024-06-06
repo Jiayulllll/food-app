@@ -20,7 +20,7 @@ const Map = () => {
     useContext(StoreContext);
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyBUbY8MwSQ9xGLg4d_ZvnB6ZUoqIqMTl1U">
+    <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
       <h1 className="address-check-title" id="map">
         Check Your Address
       </h1>

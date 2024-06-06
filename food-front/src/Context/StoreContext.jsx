@@ -9,6 +9,8 @@ const StoreContextProvider = (props) => {
   const url = "http://localhost:4000";
   const [food_list, setFoodList] = useState([]);
   const [token, setToken] = useState("");
+  const [postcode, setPostcode] = useState("");
+  const [deliveryMessage, setDeliveryMessage] = useState("");
 
   const fetchFoodList = async () => {
     const response = await axios.get(url + "/api/food/list");
@@ -76,6 +78,21 @@ const StoreContextProvider = (props) => {
     console.log(deliveryData);
   };
 
+  const checkPostcode = async () => {
+    try {
+      const response = await axios.post(url + "/api/deliveryZone/check", {
+        postcode,
+      });
+      setDeliveryMessage(
+        response.data.isEligible
+          ? "Eligible for delivery"
+          : "Not eligible for delivery"
+      );
+    } catch (error) {
+      setDeliveryMessage(error.response?.data?.message || "Error occurred");
+    }
+  };
+
   const contextValue = {
     food_list,
     menu_list,
@@ -87,6 +104,10 @@ const StoreContextProvider = (props) => {
     token,
     setToken,
     url,
+    postcode,
+    setPostcode,
+    checkPostcode,
+    deliveryMessage,
   };
 
   return (

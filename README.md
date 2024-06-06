@@ -10,7 +10,9 @@
 
 ## finished vertify page, user order page, order page in admin panel
 
-## Working on map feature, search feature will done this week.
+## finished map feature,
+
+## working on add delivery zoo in admin panel will done this week.
 
 # React + Nodejs + Vite
 

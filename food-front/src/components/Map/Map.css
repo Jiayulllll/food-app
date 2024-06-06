@@ -1,0 +1,61 @@
+/* src/components/Map.css */
+.address-check-title {
+  margin-top: 30px;
+  color: white;
+}
+
+.map-text {
+  max-width: 60%;
+  color: #808080;
+}
+
+.map-container {
+  margin: 30px 0px;
+  display: flex;
+  height: 400px; /* Adjust based on your needs */
+}
+
+.map-area {
+  flex: 1.5;
+}
+
+.search-area {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postcode-input {
+  border-color: #c187d1;
+
+  width: 70%;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+.check-button {
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 8px;
+  background: #c187d1;
+
+  border-radius: 50px;
+}
+.check-button.active {
+  background-color: #d2dce6;
+}
+
+.check-button:hover {
+  background: #e2d4e6;
+}
+
+.check-button {
+  cursor: pointer;
+}
+
+.delivery-message {
+  color: #c187d1;
+}

@@ -38,4 +38,14 @@ const addPostcode = async (req, res) => {
   }
 };
 
-export { checkPostcode, addPostcode };
+const listPostcodes = async (req, res) => {
+  try {
+    const zones = await deliveryZoneModel.find({});
+    res.json(zones);
+  } catch (error) {
+    console.error(error);
+    res.json({ success: false, message: "Error retrieving postcodes" });
+  }
+};
+
+export { checkPostcode, addPostcode, listPostcodes };

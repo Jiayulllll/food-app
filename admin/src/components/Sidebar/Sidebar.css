@@ -4,6 +4,9 @@
   border: 1.5px solid #a9a9a9;
   border-top: 0;
 }
+.sidebar {
+  flex: 0 0 250px; /* This means no grow, no shrink, and a base width of 200px */
+}
 .sidebar-options {
   padding-top: 50px;
   padding-left: 20%;
@@ -25,6 +28,7 @@
 .sidebar {
   font-size: max(1vw, 10px);
 }
+
 .sidebar-option img {
   width: 20px;
 }

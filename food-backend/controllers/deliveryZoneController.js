@@ -26,8 +26,8 @@ const addPostcode = async (req, res) => {
 
     // Create new postcode entry
     const newZone = new deliveryZoneModel({
-      postcode,
-      isEligible,
+      postcode: req.body.postcode,
+      isEligible: req.body.isEligible,
     });
 
     await newZone.save();
@@ -48,4 +48,24 @@ const listPostcodes = async (req, res) => {
   }
 };
 
-export { checkPostcode, addPostcode, listPostcodes };
+const removePostcode = async (req, res) => {
+  const { postcode } = req.body;
+
+  try {
+    const result = await deliveryZoneModel.findOneAndDelete({ postcode });
+
+    if (result) {
+      return res.json({
+        success: true,
+        message: "Postcode removed successfully",
+      });
+    } else {
+      return res.json({ success: false, message: "Postcode not found" });
+    }
+  } catch (error) {
+    console.error(error);
+    res.json({ success: false, message: "Error removing postcode" });
+  }
+};
+
+export { checkPostcode, addPostcode, listPostcodes, removePostcode };

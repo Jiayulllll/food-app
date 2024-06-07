@@ -12,7 +12,9 @@
 
 ## finished map feature,
 
-## working on add delivery zoo in admin panel will done this week.
+## finished addPostcode page in Admin panel all backend code finished
+
+## Now working on improving site design
 
 # React + Nodejs + Vite
 

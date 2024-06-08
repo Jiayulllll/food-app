@@ -1,0 +1,29 @@
+body {
+  background-image: url("/web-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header {
+  background-image: url("/header_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 750px) {
+  body {
+    background-size: contain;
+    background-position: top center;
+  }
+  .header {
+    background-size: contain;
+    background-position: top center;
+  }
+  .explore {
+    background-size: contain;
+  }
+}

@@ -5,7 +5,7 @@
   border-top: 0;
 }
 .sidebar {
-  flex: 0 0 250px; /* This means no grow, no shrink, and a base width of 200px */
+  flex: 0 0 250px;
 }
 .sidebar-options {
   padding-top: 50px;

@@ -9,9 +9,9 @@ const Header = () => {
     }
   };
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="header-contents">
-        <h2>Order your favourite food here</h2>
+        <h2>Have a Delicious Meal with Us</h2>
         <p>
           Explore our varied menu, which offers a delightful selection of dishes
           made with premium ingredients and exceptional culinary skill. We are

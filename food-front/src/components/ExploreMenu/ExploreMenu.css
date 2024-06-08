@@ -12,6 +12,10 @@
   color: #808080;
 }
 .explore-menu-list {
+  background-image: url("/explore.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +23,8 @@
   text-align: center;
   margin: 20px 0px;
   overflow-x: scroll;
+  width: 100%;
+  height: 302px;
 }
 .explore-menu-list::-webkit-scrollbar {
   display: none;
@@ -36,13 +42,14 @@
 }
 .explore-menu-list-item p {
   margin-top: 10px;
-  color: #747474;
+  color: #ad48c9;
   font-size: max(1.4vw, 16px);
   cursor: pointer;
+  font-weight: bold;
 }
 .explore-menu hr {
   margin: 10px 0px;
-  height: 2px;
+
   background-color: #e2e2e2;
   border: none;
 }

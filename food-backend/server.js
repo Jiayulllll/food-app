@@ -12,7 +12,7 @@ import deliveryZoneRouter from "./routes/deliveryZoneRoute.js";
 // initilize app use express
 const app = express();
 //define the port number
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // middleware
 // initilize middleware
@@ -36,5 +36,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log("Server Started on http://localhost:${port}");
 });
-
-//mongodb+srv://food:65789282@cluster0.6ijkpwn.mongodb.net/?

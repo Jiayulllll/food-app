@@ -13,6 +13,7 @@
 }
 .explore-menu-list {
   background-image: url("/explore.png");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

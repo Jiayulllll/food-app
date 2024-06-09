@@ -3,6 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  will-change: transform;
+  transition: background-color 0.3s;
+}
+.navbar.scrolled {
+  background-color: #000;
 }
 
 .navbar .logo {
@@ -10,8 +18,8 @@
 }
 
 .navbar-icon {
-  height: 25px; /* Adjust the size as needed */
-  width: auto; /* Keeps the aspect ratio intact */
+  height: 25px;
+  width: auto;
 }
 
 .navbar-menu {
@@ -66,7 +74,7 @@
 }
 .navbar-profile img {
   position: relative;
-  height: 25px; /* Adjust the size as needed */
+  height: 25px;
   width: auto;
 }
 .navbar-profile-dropdown {

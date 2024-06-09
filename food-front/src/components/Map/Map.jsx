@@ -1,9 +1,8 @@
-// src/components/Map.jsx
 import { StoreContext } from "../../Context/StoreContext";
 import React, { useContext } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-import "./Map.css"; // Importing the CSS for styling
+import "./Map.css";
 
 const containerStyle = {
   width: "100%",

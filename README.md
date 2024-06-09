@@ -1,21 +1,3 @@
-# still working on the backend. Not deploy the backend, during the development the front website can not fetch data from server.
-
-## finished connected to the MongDB and add, list, order function
-
-## finished the admin panel for the website backend
-
-## finished the login & registration feature
-
-## finshed cart feature, order feature, stripe payments
-
-## finished vertify page, user order page, order page in admin panel
-
-## finished map feature,
-
-## finished addPostcode page in Admin panel all backend code finished
-
-## Now working on improving site design
-
 # React + Nodejs + Vite
 
 create the app using `npm create vite@latest`
@@ -37,12 +19,26 @@ Built using:
 - Database: MongoDB
 - Development environment: Vite
 
-In the /food, you can run:
+In the /food-backend, you can run:
+
+### `npm run server`
+
+In the /food-front, you can run:
 
 ### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+In the /admin, you can run:
+
+### `npm run dev`
+
+Open [http://localhost:5174](http://localhost:5174) to view it in your browser.
+
+to update the menu,
+to change order status,
+to add/delete the delivery postcode.
 
 ### `npm test`
 

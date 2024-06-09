@@ -69,7 +69,7 @@
   cursor: pointer;
 }
 
-.cart-promocode {
+/* .cart-promocode {
   flex: 1;
 }
 .cart-promocode p {
@@ -82,21 +82,23 @@
   align-items: center;
   background-color: #eaeaea;
   border-radius: 4px;
+  gap: 20px;
 }
 .cart-promocode-input input {
   background: transparent;
   border: none;
   outline: none;
   padding-left: 10px;
+  width: calc(80% - max(10vw, 150px) - 10px);
 }
 .cart-promocode-input button {
   width: max(10vw, 150px);
   padding: 12px 5px;
-  background-color: black;
+  background-color: #c187d1;
   border: none;
   color: white;
   border-radius: 4px;
-}
+} */
 
 @media (max-width: 750px) {
   .cart-bottom {

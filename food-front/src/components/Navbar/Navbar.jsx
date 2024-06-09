@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,7 +7,30 @@ import { StoreContext } from "../../Context/StoreContext";
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
   const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
+  const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const unlisten = navigate((location) => {
+      if (location.pathname !== location.pathname) {
+        window.scrollTo(0, 0);
+      }
+    });
+
+    return unlisten;
+  }, [navigate]);
+
   const logout = () => {
     localStorage.removeItem("token");
     setToken("");
@@ -15,7 +38,7 @@ const Navbar = ({ setShowLogin }) => {
   };
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <Link to="/">
         <img className="logo" src={assets.logo} alt="" />
       </Link>

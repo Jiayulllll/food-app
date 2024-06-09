@@ -9,11 +9,12 @@
 }
 .explore-menu-text {
   max-width: 60%;
-  color: #808080;
+  color: #564857;
 }
 .explore-menu-list {
-  background-image: url("/explore.png");
-
+  /* background-image: url("/explore.png"); */
+  background-color: #1c1c20;
+  border-radius: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +44,7 @@
 }
 .explore-menu-list-item p {
   margin-top: 10px;
-  color: #ad48c9;
+  color: #c187d1;
   font-size: max(1.4vw, 16px);
   cursor: pointer;
   font-weight: bold;

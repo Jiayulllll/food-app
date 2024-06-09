@@ -6,6 +6,19 @@ Framework: React
 
 Variant: Javascript
 
+# Food order Portfolio Website in React
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<img width="1266" alt="food website" src="https://github.com/Jiayulllll/portofolio/blob/master/my-web/public/images/projects/2.png">
+
+Built using:
+
+- Front-end library: React
+- Back-end library: Nodejs
+- Database: MongoDB
+- Development environment: Vite
+
 # Admin Panel
 
 ## [Admin Panel link](https://food-app-admin-mu.vercel.app/)
@@ -28,18 +41,7 @@ you can see all the orders,you can change the order status
 
 you can delete and add the postcode that are available deliver
 
-# Food order Portfolio Website in React
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-<img width="1266" alt="food website" src="https://github.com/Jiayulllll/portofolio/blob/master/my-web/public/images/projects/2.png">
-
-Built using:
-
-- Front-end library: React
-- Back-end library: Nodejs
-- Database: MongoDB
-- Development environment: Vite
+## For the localhost user
 
 In the /food-backend, you can run:
 

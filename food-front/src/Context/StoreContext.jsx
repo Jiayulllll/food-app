@@ -6,7 +6,7 @@ import axios from "axios";
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [ordersData, setOrdersData] = useState({});
-  const url = "http://localhost:4000";
+  const url = "https://food-app-nm2a.onrender.com";
   const [food_list, setFoodList] = useState([]);
   const [token, setToken] = useState("");
   const [postcode, setPostcode] = useState("");

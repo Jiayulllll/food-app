@@ -21,12 +21,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   text-align: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
   overflow-x: scroll;
   width: 100%;
-  height: 302px;
+  height: 200px;
 }
 .explore-menu-list::-webkit-scrollbar {
   display: none;
@@ -59,5 +59,28 @@
   .explore-menu-text {
     max-width: 100%;
     font-size: 14px;
+  }
+  .explore-menu-list {
+    height: 200px;
+  }
+  .explore-menu-list-item img {
+    width: 12vw;
+    min-width: 60px;
+  }
+  .explore-menu-list-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .explore-menu-list {
+    height: 150px;
+  }
+  .explore-menu-list-item img {
+    width: 15vw;
+    min-width: 50px;
+  }
+  .explore-menu-list-item p {
+    font-size: 12px;
   }
 }

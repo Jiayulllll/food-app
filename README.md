@@ -19,6 +19,15 @@ Built using:
 - Database: MongoDB
 - Development environment: Vite
 
+### Test the website
+
+#### Stripe: test payment method (Australia)
+
+- Card number--4000000360000006.
+- Use a valid future date, such as 12/34.
+- Use any three-digit CVC
+- Use any value you like for other form fields.
+
 # Admin Panel
 
 ## [Admin Panel link](https://food-app-admin-mu.vercel.app/)
@@ -28,6 +37,8 @@ Built using:
 ### Click the Add items
 
 you can update menu by adding food image, name, description,category and price.
+
+**!!! Notice !!!:** due to the server limit, it will take a little bit long time to upload image to the database.
 
 ### Click the List items
 

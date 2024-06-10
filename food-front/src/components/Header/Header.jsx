@@ -3,7 +3,7 @@ import "./Header.css";
 
 const Header = () => {
   const handleViewMenuClick = () => {
-    const exploreMenuElement = document.getElementById("explore-menu");
+    const exploreMenuElement = document.getElementById("menu");
     if (exploreMenuElement) {
       exploreMenuElement.scrollIntoView({ behavior: "smooth" });
     }

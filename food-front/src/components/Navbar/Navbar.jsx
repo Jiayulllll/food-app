@@ -21,6 +21,24 @@ const Navbar = ({ setShowLogin }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleClick = (event) => {
+    event.preventDefault(); // Prevent the default anchor link behavior
+    const targetId = event.currentTarget.getAttribute("href").slice(1); // Remove the '#' from the href
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const topOffset = targetElement.offsetTop;
+      const navbarOffset = document.querySelector(".navbar").offsetHeight;
+      const scrollPosition = topOffset - navbarOffset;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+      setMenu(targetId); // Update the menu state based on the clicked element
+    }
+  };
+
   useEffect(() => {
     const unlisten = navigate((location) => {
       if (location.pathname !== location.pathname) {
@@ -51,25 +69,25 @@ const Navbar = ({ setShowLogin }) => {
           home
         </Link>
         <a
-          href="#explore-menu"
-          onClick={() => setMenu("menu")}
+          href="#menu"
+          onClick={handleClick}
           className={`${menu === "menu" ? "active" : ""}`}
         >
-          menu
+          Menu
         </a>
         <a
           href="#map"
-          onClick={() => setMenu("mob-app")}
-          className={`${menu === "mob-app" ? "active" : ""}`}
+          onClick={handleClick}
+          className={`${menu === "map" ? "active" : ""}`}
         >
-          delivery information
+          Delivery Information
         </a>
         <a
           href="#footer"
-          onClick={() => setMenu("contact")}
-          className={`${menu === "contact" ? "active" : ""}`}
+          onClick={handleClick}
+          className={`${menu === "footer" ? "active" : ""}`}
         >
-          contact us
+          Contact Us
         </a>
       </ul>
       <div className="navbar-right">

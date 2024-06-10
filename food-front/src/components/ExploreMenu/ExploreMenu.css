@@ -26,13 +26,14 @@
   margin: 10px 0px;
   overflow-x: scroll;
   width: 100%;
-  height: 200px;
+  height: auto;
+  min-height: 200px;
 }
 .explore-menu-list::-webkit-scrollbar {
   display: none;
 }
 .explore-menu-list-item img {
-  width: 100%;
+  width: 8vw;
   height: auto;
   cursor: pointer;
   border-radius: 50%;
@@ -61,14 +62,14 @@
     font-size: 14px;
   }
   .explore-menu-list {
-    height: 300px;
+    height: auto;
   }
   .explore-menu-list-item img {
-    width: 12vw;
+    width: 8vw;
     min-width: 60px;
   }
   .explore-menu-list-item p {
-    font-size: 14px;
+    font-size: max(1.2vw, 14px);
   }
 }
 

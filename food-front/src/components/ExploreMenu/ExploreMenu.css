@@ -32,8 +32,8 @@
   display: none;
 }
 .explore-menu-list-item img {
-  width: 7.5vw;
-  min-width: 80px;
+  width: 100%;
+  height: auto;
   cursor: pointer;
   border-radius: 50%;
   transition: 0.2s;
